@@ -1,0 +1,12 @@
+{
+  "name": "vikcal",
+  "version": "1.0.0",
+  "description": "VikCal for WordPress",
+  "scripts": {
+    "sass": "node-sass --watch sass/style.scss -o ./assets/"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

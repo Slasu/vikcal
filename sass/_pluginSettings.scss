@@ -1,0 +1,37 @@
+.VikCal .VikCal--holder .VikCal--header {
+  /*HeaderMonthFontColor*/color: #000;
+  /*HeaderBGColor*/background: #7da7d9;
+  /*HeaderMonthFontWeight*/font-weight: 700;
+}
+
+.VikCal .VikCal--holder .VikCal--days {
+  /*DayNameFontColor*/color: #000;
+  /*HeaderBGColor*/background: #7da7d9;
+  /*HeaderDaysFontWeight*/font-weight: 700;
+}
+
+.VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell .VikCal--cell__day {
+  /*CalDayFontColor*/color: #000;
+  /*CalDayFontWeight*/font-weight: 700;
+}
+
+.VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell.VikCal--cell__event .VikCal--day__event,
+.VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell.VikCal--cell__event .VikCal--cell__day {
+  /*EventFontColor*/color: #fff;
+  /*EventTitleFontWeight*/font-weight: 700;
+}
+
+.VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell.VikCal--cell__event {
+  /*EventBackgroundColor*/background: #405a7f;
+}
+
+.VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell,
+.VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell:nth-child(7n) {
+  /*HeaderBGColor*/border-color: #7da7d9;
+}
+
+.VikCal .VikCal--arrows__below .VikCal--arrows__holder .VikCal--arrows__rightArrow span,
+.VikCal .VikCal--arrows__below .VikCal--arrows__holder .VikCal--arrows__leftArrow span {
+  /*NextPrevColor*/color: #38c6f4;
+  /*NextPrevFontWeight*/font-weight: 700;
+}

@@ -1,0 +1,55 @@
+.vikcal--pageholder {
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%;
+
+  .vikcal--page__content {
+    .vikcal--eventsList__single {
+      display: block;
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      overflow: auto;
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      .vikcal--eventsList__singleImg {
+        float: left;
+        margin-right: 15px;
+        max-width: 400px;
+        vertical-align: top;
+        width: 100%;
+
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .vikcal--eventsList__singleContent {
+        vertical-align: top;
+
+        & * {
+          clear: none;
+        }
+
+        h3 {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+
+        .vikcal--eventsList__readmore {
+          text-align: right;
+        }
+      }
+
+    }
+  }
+}

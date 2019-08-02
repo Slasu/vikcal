@@ -1,0 +1,203 @@
+.VikCal {
+  margin: 0 auto !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  position: relative; }
+  .VikCal .VikCal--holder .VikCal--header {
+    padding: 10px 0;
+    text-align: center; }
+  .VikCal .VikCal--holder .VikCal--days {
+    display: flex; }
+    .VikCal .VikCal--holder .VikCal--days span {
+      width: calc(100% / 7);
+      text-align: center; }
+  .VikCal .VikCal--holder .VikCal--body .VikCal--row {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; }
+    .VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell {
+      height: 90px;
+      max-height: 90px;
+      padding: 5px;
+      position: relative;
+      width: calc(100% / 7);
+      border-left: 1px solid #ccc;
+      border-bottom: 1px solid #ccc; }
+      .VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell:nth-child(7n) {
+        border-right: 1px solid #ccc; }
+      .VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell .VikCal--cell__day {
+        display: block;
+        font-size: 20px;
+        line-height: 20px;
+        position: relative;
+        text-align: right; }
+      .VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell.VikCal--cell__event {
+        background: #ccc; }
+        .VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell.VikCal--cell__event .VikCal--day__event {
+          height: 100%;
+          font-size: 20px;
+          left: 0;
+          line-height: 20px;
+          padding: 30px 5px 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          text-decoration: none;
+          text-align: right; }
+  .VikCal .VikCal--arrows__below .VikCal--arrows__holder .VikCal--arrows__leftArrow {
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 20px;
+    position: relative;
+    width: 40%; }
+    .VikCal .VikCal--arrows__below .VikCal--arrows__holder .VikCal--arrows__leftArrow span {
+      cursor: pointer;
+      padding-left: 40px;
+      /*&:before {
+            content: '\2b9c';
+            font-size: 40px;
+            left: 0;
+            line-height: 40px;
+            position: absolute;
+          }*/ }
+      .VikCal .VikCal--arrows__below .VikCal--arrows__holder .VikCal--arrows__leftArrow span img {
+        height: 100%;
+        left: 0;
+        max-height: 100%;
+        position: absolute;
+        width: auto; }
+  .VikCal .VikCal--arrows__below .VikCal--arrows__holder .VikCal--arrows__rightArrow {
+    display: inline-block;
+    float: right;
+    margin-right: 5%;
+    margin-top: 20px;
+    position: relative;
+    text-align: right;
+    width: 40%; }
+    .VikCal .VikCal--arrows__below .VikCal--arrows__holder .VikCal--arrows__rightArrow span {
+      cursor: pointer;
+      padding-right: 40px;
+      /*&:after {
+            content: '\2b9e';
+            font-size: 40px;
+            right: 0;
+            line-height: 40px;
+            position: absolute;
+          }*/ }
+      .VikCal .VikCal--arrows__below .VikCal--arrows__holder .VikCal--arrows__rightArrow span img {
+        height: 100%;
+        max-height: 100%;
+        right: 0;
+        position: absolute;
+        width: auto; }
+  .VikCal .VikCal--arrows__side.arrow--side__left, .VikCal .VikCal--arrows__side.arrow--side__right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); }
+    .VikCal .VikCal--arrows__side.arrow--side__left span, .VikCal .VikCal--arrows__side.arrow--side__right span {
+      cursor: pointer;
+      position: relative; }
+      .VikCal .VikCal--arrows__side.arrow--side__left span img, .VikCal .VikCal--arrows__side.arrow--side__right span img {
+        display: block; }
+  .VikCal .VikCal--arrows__side.arrow--side__left span {
+    left: calc(-100% - 15px); }
+  .VikCal .VikCal--arrows__side.arrow--side__right {
+    right: 0; }
+    .VikCal .VikCal--arrows__side.arrow--side__right span {
+      right: calc(-100% - 15px); }
+  .VikCal .VikCal--arrows__header.arrow--header__left, .VikCal .VikCal--arrows__header.arrow--header__right {
+    position: absolute;
+    top: 10px; }
+    .VikCal .VikCal--arrows__header.arrow--header__left span, .VikCal .VikCal--arrows__header.arrow--header__right span {
+      cursor: pointer;
+      position: relative; }
+      .VikCal .VikCal--arrows__header.arrow--header__left span img, .VikCal .VikCal--arrows__header.arrow--header__right span img {
+        display: block;
+        max-height: 30px; }
+  .VikCal .VikCal--arrows__header.arrow--header__left {
+    left: 10px; }
+  .VikCal .VikCal--arrows__header.arrow--header__right {
+    right: 10px; }
+
+.vikcal--pageholder {
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  width: 100%; }
+  .vikcal--pageholder .vikcal--page__content .vikcal--eventsList__single {
+    display: block;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    overflow: auto; }
+    .vikcal--pageholder .vikcal--page__content .vikcal--eventsList__single:last-child {
+      border-bottom: none;
+      padding-bottom: 0; }
+    .vikcal--pageholder .vikcal--page__content .vikcal--eventsList__single .vikcal--eventsList__singleImg {
+      float: left;
+      margin-right: 15px;
+      max-width: 400px;
+      vertical-align: top;
+      width: 100%; }
+      .vikcal--pageholder .vikcal--page__content .vikcal--eventsList__single .vikcal--eventsList__singleImg img {
+        display: block;
+        width: 100%;
+        height: auto; }
+    .vikcal--pageholder .vikcal--page__content .vikcal--eventsList__single .vikcal--eventsList__singleContent {
+      vertical-align: top; }
+      .vikcal--pageholder .vikcal--page__content .vikcal--eventsList__single .vikcal--eventsList__singleContent * {
+        clear: none; }
+      .vikcal--pageholder .vikcal--page__content .vikcal--eventsList__single .vikcal--eventsList__singleContent h3 {
+        margin-top: 0;
+        margin-bottom: 0; }
+      .vikcal--pageholder .vikcal--page__content .vikcal--eventsList__single .vikcal--eventsList__singleContent .vikcal--eventsList__readmore {
+        text-align: right; }
+
+.VikCal .VikCal--holder .VikCal--header {
+  /*HeaderMonthFontColor*/
+  color: #000;
+  /*HeaderBGColor*/
+  background: #7da7d9;
+  /*HeaderMonthFontWeight*/
+  font-weight: 700; }
+
+.VikCal .VikCal--holder .VikCal--days {
+  /*DayNameFontColor*/
+  color: #000;
+  /*HeaderBGColor*/
+  background: #7da7d9;
+  /*HeaderDaysFontWeight*/
+  font-weight: 700; }
+
+.VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell .VikCal--cell__day {
+  /*CalDayFontColor*/
+  color: #000;
+  /*CalDayFontWeight*/
+  font-weight: 700; }
+
+.VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell.VikCal--cell__event .VikCal--day__event,
+.VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell.VikCal--cell__event .VikCal--cell__day {
+  /*EventFontColor*/
+  color: #fff;
+  /*EventTitleFontWeight*/
+  font-weight: 700; }
+
+.VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell.VikCal--cell__event {
+  /*EventBackgroundColor*/
+  background: #405a7f; }
+
+.VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell,
+.VikCal .VikCal--holder .VikCal--body .VikCal--row .VikCal--cell:nth-child(7n) {
+  /*HeaderBGColor*/
+  border-color: #7da7d9; }
+
+.VikCal .VikCal--arrows__below .VikCal--arrows__holder .VikCal--arrows__rightArrow span,
+.VikCal .VikCal--arrows__below .VikCal--arrows__holder .VikCal--arrows__leftArrow span {
+  /*NextPrevColor*/
+  color: #38c6f4;
+  /*NextPrevFontWeight*/
+  font-weight: 700; }

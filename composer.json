@@ -1,0 +1,17 @@
+{
+  "name": "ssu/vikcal",
+  "description": "Simple event calendar for WordPress",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Sławomir Sułkowski",
+      "email": "slasu92@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "VikCal\\": "includes/"
+    },
+    "files": ["functions.php"]
+  }
+}
